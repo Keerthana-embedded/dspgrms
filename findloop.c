@@ -81,3 +81,17 @@ while(p&&q&&q->link)
 			ptr=ptr->link;
 		}while(temp!=ptr);
 	}
+
+void mid(struct st *p)
+{
+struct st *m=NULL,*n=NULL;
+m=p,n=p;
+while(n&&n->link)
+{
+m=m->link;
+n=n->link->link;
+}
+        printf("%d",m->a);
+}
+
+
